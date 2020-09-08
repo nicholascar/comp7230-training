@@ -1,9 +1,4 @@
 jupyter
 requests
 rdflib
-geojson
 shapely
-geopandas
-matplotlib
-descartes
-pip install -U git+https://github.com/manaakiwhenua/rhealpixdggs-py
