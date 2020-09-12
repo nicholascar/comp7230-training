@@ -1,1 +1,1 @@
-*See the Jupyter Notebook file, <lecture.ipynb>*
+*See the Jupyter Notebook file, [lecture.ipynb](lecture.ipynb)*
