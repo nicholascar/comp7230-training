@@ -3,3 +3,4 @@ requests
 rdflib
 shapely
 pandas
+matplotlib
