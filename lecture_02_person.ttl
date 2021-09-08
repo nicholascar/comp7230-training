@@ -1,0 +1,34 @@
+PREFIX ex: <http://example.com/>
+PREFIX orcid: <https://orcid.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+#
+# model
+#
+ex:Thing
+    a rdfs:Class ;
+.
+
+ex:Person
+    a rdfs:Class ;
+    rdfs:subClassOf ex:Thing ;
+.
+
+ex:name
+    a rdf:Property ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:string ;
+.
+
+ex:string
+    a rdfs:Datatype ;
+.
+
+#
+# data
+#
+orcid:8742-7730
+    a ex:Person ;
+    ex:name "Nick" ;
+.
