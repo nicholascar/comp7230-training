@@ -1,16 +1,16 @@
-PREFIX : <http://example.com/>
+PREFIX ex: <http://example.com/>
 PREFIX time: <http://www.w3.org/2006/time#>
 
-:first a time:TemporalEntity .
-:second a time:TemporalEntity .
-:third a time:TemporalEntity .
-:fourth a time:TemporalEntity .
+ex:first a time:TemporalEntity .
+ex:second a time:TemporalEntity .
+ex:third a time:TemporalEntity .
+ex:fourth a time:TemporalEntity .
 
-:first time:before :second .
+ex:first time:before ex:second .
 
-:third time:after :second .
+ex:third time:after ex:second .
 
-:third time:inXSDDateTimeStamp "2021-07-15T23:59:59Z" .
-:fourth time:hasBeginning [
+ex:third time:inXSDDateTimeStamp "2021-07-15T23:59:59Z" .
+ex:fourth time:hasBeginning [
     time:inXSDDateTimeStamp "2021-07-16T00:00:00Z"
 ] .

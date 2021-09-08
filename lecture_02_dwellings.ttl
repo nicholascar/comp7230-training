@@ -1,0 +1,222 @@
+PREFIX ex: <http://example.com/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# years as Temporal Entities
+# with XSD year value
+ex:year-2011 
+    a time:temporalEntity ;
+    time:inXSDgYear 2011 ;
+.
+
+ex:year-2016
+    a time:temporalEntity ;
+    time:after ex:year-2011 ;
+    time:inXSDgYear 2016 ;
+.
+
+ex:year-2021 
+    a time:temporalEntity ;
+    time:after ex:year-2016 ;
+    time:inXSDgYear 2021 ;
+.
+
+# Mesh Blocks as spatial Features
+# with GML Geometries
+<https://linked.data.gov.au/dataset/asgs2016/50055290000>
+    a geo:Feature ;
+    geo:sfTouches <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+.
+
+<https://linked.data.gov.au/dataset/asgs2016/50055290000>
+    a geo:Feature ;
+    geo:hasGeometry [
+        geo:asGML """
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG:6.9:3857">
+                <gml:surfaceMember>
+                    <gml:Polygon>
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>
+                                    12899334.105099998 -3769147.243999999 12899286.0176 -3769147.321800001 12899239.331900001 -3769145.4193000011 12899226.386599999 -3769143.6215000004 12899227.109900001 -3769242.3167000003 12899228.674199998 -3769298.9681000002 12899226.147 -3769471.4310999997 12899223.904100001 -3769600.4343999997 12899227.6666 -3769601.0612000003 12899246.743099999 -3769602.4437999986 12899265.701900002 -3769602.5263999999 12899269.8259 -3769602.4560000002 12899343.4463 -3769601.4525000006 12899344.969999999 -3769292.9523999989 12899342.365499999 -3769287.1867999993 12899345.705400001 -3769264.4649999999 12899346.2621 -3769259.3434000015 12899340.622499999 -3769252.5744999982 12899334.239300001 -3769210.8434999995 12899334.568399999 -3769160.191300001 12899334.105099998 -3769147.243999999
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMember>
+            </gml:MultiSurface>
+            """ ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/asgs2016/50049040000>
+    a geo:Feature ;
+    geo:hasGeometry [
+        geo:asGML """
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG:6.9:3857">
+                <gml:surfaceMember>
+                    <gml:Polygon>
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>
+                                    12891258.579999998 -3755092.3528000005 12891393.4038 -3755094.2093000002 12891396.5284 -3754691.0832000002 12891255.2278 -3754691.990699999 12891256.584899999 -3754823.8352000006 12891258.632800002 -3755002.0656999983 12891258.579999998 -3755092.3528000005
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMember>
+            </gml:MultiSurface>
+            """ ;
+    ] ;
+.
+
+ex:obs-01 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-02 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 5 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-03 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 1 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-04 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 1 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-05 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-06 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 6 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-07 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-08 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 1 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-09 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 5 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-10 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2011 .
+
+ex:obs-11 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-12 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-13 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-14 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 1 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-15 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 2 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-16 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 6 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-17 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-18 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 1 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-19 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 4 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-20 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2016 .
+
+ex:obs-21 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-22 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 4 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-23 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 1 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-24 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50055290000> ;
+    ex:hasNoPeople 2 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-25 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 2 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-26 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 7 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-27 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-28 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 1 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-29 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 5 ;
+    time:hasTime ex:year-2021 .
+
+ex:obs-30 a ex:Observation ;
+    ex:containingMB <https://linked.data.gov.au/dataset/asgs2016/50049040000> ;
+    ex:hasNoPeople 3 ;
+    time:hasTime ex:year-2021 .
