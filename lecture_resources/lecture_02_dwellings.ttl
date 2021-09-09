@@ -1,7 +1,17 @@
 PREFIX ex: <http://example.com/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# dwellings model property
+ex:hasNoPeople
+    a rdf:Property ;
+    rdfs:label "has no people" ;
+    rdfs:domain ex:Observation ;
+    rdfs:range xsd:integer ;
+.
 
 # years as Temporal Entities
 # with XSD year value
