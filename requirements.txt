@@ -4,3 +4,4 @@ rdflib
 shapely
 pandas
 matplotlib
+sparql_dataframe
