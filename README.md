@@ -2,10 +2,15 @@
 # Using Python packages for Linked Data & spatial data
 ### by Dr Nicholas Car
 
-This is a lecture that is delivered by following through a Jupyter Notebook. See the Jupyter Notebook file, [lecture.ipynb](lecture.ipynb).
+This is a series of lectures delivered by following through Jupyter Notebooks. 
 
-Click here to run this lecture in your web browser:  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nicholascar/comp7230-training/HEAD?filepath=lecture.ipynb)
+See the Jupyter Notebook files:
+
+* [lecture_01.ipynb](lecture_01.ipynb)
+* [lecture_02.ipynb](lecture_02.ipynb)
+
+Click here to run the first lecture in your web browser:  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nicholascar/comp7230-training/HEAD?filepath=lecture_01.ipynb)
 
 ## Contact
 
