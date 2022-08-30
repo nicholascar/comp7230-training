@@ -1,3 +1,4 @@
+setuptools==57.5.0
 jupyter
 httpx
 rdflib
