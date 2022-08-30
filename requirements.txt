@@ -1,7 +1,8 @@
 jupyter
-requests
+httpx
 rdflib
 shapely
 pandas
 matplotlib
 sparql_dataframe
+pyglet

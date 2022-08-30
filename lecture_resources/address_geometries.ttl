@@ -1,0 +1,203 @@
+PREFIX addr: <http://w3id.org/profile/anz-address/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845944>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.0687229 -35.37847955)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845934>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.0401187 -35.19989093)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845943>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.0368852 -35.19795303)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845949>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.06908395 -35.37882495)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845955>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03046282 -35.20202762)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845935>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03640841 -35.19777173)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845947>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03705032 -35.19796828)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845950>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03049843 -35.20169346)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845933>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03865604 -35.20113263)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845953>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.06864966 -35.37733591)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845945>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03047333 -35.20156767)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845946>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.06895786 -35.37862878)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845939>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03661902 -35.19784933)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845941>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.06860919 -35.37833726)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845942>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.04029706 -35.19999611)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845954>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03048051 -35.20185603)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845952>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03721725 -35.19805563)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845938>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.06851657 -35.37815855)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845936>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03687042 -35.2039574)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845951>
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.06946494 -35.37908886)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+.
