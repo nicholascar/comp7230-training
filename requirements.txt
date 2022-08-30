@@ -6,3 +6,4 @@ pandas
 matplotlib
 sparql_dataframe
 pyglet
+geoplotlib
