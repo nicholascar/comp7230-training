@@ -1,291 +1,171 @@
-[
-  {
-    "@id": "http://www.opengis.net/ont/geosparql#Feature",
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "A discrete spatial phenomenon in a universe of discourse."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Feature"
-      }
+{
+    "@context": {
+        "addr": "http://w3id.org/profile/anz-address/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "https://linked.data.gov.au/dataset/asgsed3/MB/80006300000",
+            "rdfs:label": "Mesh Block 80006300000"
+        },
+        {
+            "@id": "https://linked.data.gov.au/dataset/gnaf",
+            "@type": "dcat:Dataset",
+            "dcterms:identifier": {
+                "@type": "xsd:token",
+                "@value": "gnaf"
+            },
+            "dcterms:title": {
+                "@language": "en",
+                "@value": "Geocoded National Address File"
+            }
+        },
+        {
+            "@id": "https://linked.data.gov.au/dataset/gnaf/address/GAACT714845933",
+            "@type": [
+                "addr:Address",
+                "geo:Feature"
+            ],
+            "addr:dateCreated": {
+                "@type": "xsd:date",
+                "@value": "2004-04-29"
+            },
+            "addr:dateModified": {
+                "@type": "xsd:date",
+                "@value": "2021-07-05"
+            },
+            "addr:hasAddressComponent": [
+                {
+                    "@id": "_:n038685664a7a4d439108384c988b709eb1"
+                },
+                {
+                    "@id": "_:n038685664a7a4d439108384c988b709eb2"
+                },
+                {
+                    "@id": "_:n038685664a7a4d439108384c988b709eb3"
+                },
+                {
+                    "@id": "_:n038685664a7a4d439108384c988b709eb4"
+                }
+            ],
+            "addr:hasQualifiedGeometry": {
+                "@id": "_:n038685664a7a4d439108384c988b709eb5"
+            },
+            "addr:isAddressFor": [
+                {
+                    "@id": "https://linked.data.gov.au/dataset/gnaf/addressSite/710446419"
+                },
+                {
+                    "@id": "https://linked.data.gov.au/dataset/gnaf/parcel/BELC-CHAR-15-16"
+                }
+            ],
+            "dcterms:identifier": {
+                "@type": "xsd:token",
+                "@value": "GAACT714845933"
+            },
+            "geo:sfWithin": [
+                {
+                    "@id": "https://linked.data.gov.au/dataset/asgs2016/MB/80006300000"
+                },
+                {
+                    "@id": "https://linked.data.gov.au/dataset/asgsed3/MB/80006300000"
+                }
+            ]
+        },
+        {
+            "@id": "_:n038685664a7a4d439108384c988b709eb1",
+            "addr:hasAddressComponentType": {
+                "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/numberFirst"
+            },
+            "addr:hasTextValue": "6",
+            "addr:hasValue": "6"
+        },
+        {
+            "@id": "_:n038685664a7a4d439108384c988b709eb2",
+            "addr:hasAddressComponentType": {
+                "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/locality"
+            },
+            "addr:hasTextValue": "locba032712915d",
+            "addr:hasValue": {
+                "@id": "https://linked.data.gov.au/dataset/gnaf/locality/locba032712915d"
+            }
+        },
+        {
+            "@id": "_:n038685664a7a4d439108384c988b709eb3",
+            "addr:hasAddressComponentType": {
+                "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/postcode"
+            },
+            "addr:hasTextValue": "2615",
+            "addr:hasValue": {
+                "@id": "https://linked.data.gov.au/dataset/gnaf/postcode/2615"
+            }
+        },
+        {
+            "@id": "_:n038685664a7a4d439108384c988b709eb4",
+            "addr:hasAddressComponentType": {
+                "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/streetLocality"
+            },
+            "addr:hasTextValue": "ACT3857",
+            "addr:hasValue": {
+                "@id": "https://linked.data.gov.au/dataset/gnaf/streetLocality/ACT3857"
+            }
+        },
+        {
+            "@id": "_:n038685664a7a4d439108384c988b709eb5",
+            "addr:hasRole": {
+                "@id": "https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS"
+            },
+            "geo:hasGeometry": {
+                "@id": "_:n038685664a7a4d439108384c988b709eb6"
+            }
+        },
+        {
+            "@id": "_:n038685664a7a4d439108384c988b709eb6",
+            "@type": "geo:Geometry",
+            "geo:asWKT": {
+                "@type": "geo:wktLiteral",
+                "@value": "POINT (149.03865604 -35.20113263)"
+            }
+        },
+        {
+            "@id": "geo:Feature",
+            "dcterms:description": {
+                "@language": "en",
+                "@value": "A discrete spatial phenomenon in a universe of discourse."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Feature"
+            }
+        },
+        {
+            "@id": "https://linked.data.gov.au/dataset/gnaf/streetLocality/ACT3857",
+            "rdfs:label": "Packham"
+        },
+        {
+            "@id": "https://linked.data.gov.au/dataset/gnaf/address",
+            "@type": "geo:FeatureCollection",
+            "dcterms:identifier": {
+                "@type": "xsd:token",
+                "@value": "address"
+            },
+            "dcterms:title": {
+                "@language": "en",
+                "@value": "Addresses Feature Collection"
+            },
+            "rdfs:member": {
+                "@id": "https://linked.data.gov.au/dataset/gnaf/address/GAACT714845933"
+            }
+        },
+        {
+            "@id": "https://linked.data.gov.au/dataset/gnaf/locality/locba032712915d",
+            "rdfs:label": "Charnwood"
+        }
     ]
-  },
-  {
-    "@id": "http://www.opengis.net/ont/geosparql#hasGeometry",
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "A spatial representation for a given Feature."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has geometry"
-      }
-    ]
-  },
-  {
-    "@id": "https://linked.data.gov.au/dataset/gnaf/locality/locba032712915d",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Charnwood"
-      }
-    ]
-  },
-  {
-    "@id": "https://linked.data.gov.au/dataset/gnaf/address",
-    "@type": [
-      "http://www.opengis.net/ont/geosparql#FeatureCollection"
-    ],
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#token",
-        "@value": "address"
-      }
-    ],
-    "http://purl.org/dc/terms/title": [
-      {
-        "@language": "en",
-        "@value": "Addresses Feature Collection"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#member": [
-      {
-        "@id": "https://linked.data.gov.au/dataset/gnaf/address/GAACT714845933"
-      }
-    ]
-  },
-  {
-    "@id": "https://linked.data.gov.au/dataset/asgsed3/MB/80006300000",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Mesh Block 80006300000"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.opengis.net/ont/geosparql#sfWithin",
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "States that the subject SpatialObject is spatially within the object SpatialObject. DE-9IM: T*F**F***"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "within"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/identifier",
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Identifier"
-      }
-    ]
-  },
-  {
-    "@id": "https://linked.data.gov.au/dataset/gnaf",
-    "@type": [
-      "http://www.w3.org/ns/dcat#Dataset"
-    ],
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#token",
-        "@value": "gnaf"
-      }
-    ],
-    "http://purl.org/dc/terms/title": [
-      {
-        "@language": "en",
-        "@value": "Geocoded National Address File"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/title",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Title"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "type"
-      }
-    ]
-  },
-  {
-    "@id": "https://linked.data.gov.au/dataset/gnaf/address/GAACT714845933",
-    "@type": [
-      "http://w3id.org/profile/anz-address/Address",
-      "http://www.opengis.net/ont/geosparql#Feature"
-    ],
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#token",
-        "@value": "GAACT714845933"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/dateCreated": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2004-04-29"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/dateModified": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2021-07-05"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasAddressComponent": [
-      {
-        "@id": "_:nce64d4987b1c427a9fc3362d521bed88b3"
-      },
-      {
-        "@id": "_:nce64d4987b1c427a9fc3362d521bed88b1"
-      },
-      {
-        "@id": "_:nce64d4987b1c427a9fc3362d521bed88b2"
-      },
-      {
-        "@id": "_:nce64d4987b1c427a9fc3362d521bed88b4"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasQualifiedGeometry": [
-      {
-        "@id": "_:nce64d4987b1c427a9fc3362d521bed88b5"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/isAddressFor": [
-      {
-        "@id": "https://linked.data.gov.au/dataset/gnaf/addressSite/710446419"
-      },
-      {
-        "@id": "https://linked.data.gov.au/dataset/gnaf/parcel/BELC-CHAR-15-16"
-      }
-    ],
-    "http://www.opengis.net/ont/geosparql#sfWithin": [
-      {
-        "@id": "https://linked.data.gov.au/dataset/asgs2016/MB/80006300000"
-      },
-      {
-        "@id": "https://linked.data.gov.au/dataset/asgsed3/MB/80006300000"
-      }
-    ]
-  },
-  {
-    "@id": "_:nce64d4987b1c427a9fc3362d521bed88b3",
-    "http://w3id.org/profile/anz-address/hasAddressComponentType": [
-      {
-        "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/postcode"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasTextValue": [
-      {
-        "@value": "2615"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasValue": [
-      {
-        "@id": "https://linked.data.gov.au/dataset/gnaf/postcode/2615"
-      }
-    ]
-  },
-  {
-    "@id": "_:nce64d4987b1c427a9fc3362d521bed88b1",
-    "http://w3id.org/profile/anz-address/hasAddressComponentType": [
-      {
-        "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/numberFirst"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasTextValue": [
-      {
-        "@value": "6"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasValue": [
-      {
-        "@value": "6"
-      }
-    ]
-  },
-  {
-    "@id": "_:nce64d4987b1c427a9fc3362d521bed88b2",
-    "http://w3id.org/profile/anz-address/hasAddressComponentType": [
-      {
-        "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/locality"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasTextValue": [
-      {
-        "@value": "locba032712915d"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasValue": [
-      {
-        "@id": "https://linked.data.gov.au/dataset/gnaf/locality/locba032712915d"
-      }
-    ]
-  },
-  {
-    "@id": "_:nce64d4987b1c427a9fc3362d521bed88b4",
-    "http://w3id.org/profile/anz-address/hasAddressComponentType": [
-      {
-        "@id": "https://linked.data.gov.au/def/AnzAddressComponentType/streetLocality"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasTextValue": [
-      {
-        "@value": "ACT3857"
-      }
-    ],
-    "http://w3id.org/profile/anz-address/hasValue": [
-      {
-        "@id": "https://linked.data.gov.au/dataset/gnaf/streetLocality/ACT3857"
-      }
-    ]
-  },
-  {
-    "@id": "_:nce64d4987b1c427a9fc3362d521bed88b5",
-    "http://w3id.org/profile/anz-address/hasRole": [
-      {
-        "@id": "https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS"
-      }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-      {
-        "@id": "_:nce64d4987b1c427a9fc3362d521bed88b6"
-      }
-    ]
-  },
-  {
-    "@id": "_:nce64d4987b1c427a9fc3362d521bed88b6"
-  },
-  {
-    "@id": "https://linked.data.gov.au/dataset/gnaf/streetLocality/ACT3857",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Packham"
-      }
-    ]
-  }
-]
+}

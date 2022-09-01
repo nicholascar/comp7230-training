@@ -1,0 +1,79 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX addr: <http://w3id.org/profile/anz-address/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/gnaf>
+    a dcat:Dataset ;
+    dcterms:identifier "gnaf"^^xsd:token ;
+    dcterms:title "Geocoded National Address File"@en ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address>
+    a geo:FeatureCollection ;
+    dcterms:identifier "address"^^xsd:token ;
+    dcterms:title "Addresses Feature Collection"@en ;
+    rdfs:member <https://linked.data.gov.au/dataset/gnaf/address/GAACT714845933> ;
+.
+
+geo:Feature
+    rdfs:label "Feature"@en ;
+    dcterms:description "A discrete spatial phenomenon in a universe of discourse."@en ;
+.
+
+<https://linked.data.gov.au/dataset/asgsed3/MB/80006300000>
+    rdfs:label "Mesh Block 80006300000" ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/address/GAACT714845933>
+    a
+        addr:Address ,
+        geo:Feature ;
+    dcterms:identifier "GAACT714845933"^^xsd:token ;
+    addr:dateCreated "2004-04-29"^^xsd:date ;
+    addr:dateModified "2021-07-05"^^xsd:date ;
+    addr:hasAddressComponent
+        [
+            addr:hasAddressComponentType <https://linked.data.gov.au/def/AnzAddressComponentType/numberFirst> ;
+            addr:hasTextValue "6" ;
+            addr:hasValue "6"
+        ] ,
+        [
+            addr:hasAddressComponentType <https://linked.data.gov.au/def/AnzAddressComponentType/locality> ;
+            addr:hasTextValue "locba032712915d" ;
+            addr:hasValue <https://linked.data.gov.au/dataset/gnaf/locality/locba032712915d>
+        ] ,
+        [
+            addr:hasAddressComponentType <https://linked.data.gov.au/def/AnzAddressComponentType/postcode> ;
+            addr:hasTextValue "2615" ;
+            addr:hasValue <https://linked.data.gov.au/dataset/gnaf/postcode/2615>
+        ] ,
+        [
+            addr:hasAddressComponentType <https://linked.data.gov.au/def/AnzAddressComponentType/streetLocality> ;
+            addr:hasTextValue "ACT3857" ;
+            addr:hasValue <https://linked.data.gov.au/dataset/gnaf/streetLocality/ACT3857>
+        ] ;
+    addr:hasQualifiedGeometry [
+        geo:hasGeometry [
+            a geo:Geometry ;
+            geo:asWKT "POINT (149.03865604 -35.20113263)"^^geo:wktLiteral ;
+        ] ;
+        addr:hasRole <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/FCS> ;
+    ] ;
+    addr:isAddressFor
+        <https://linked.data.gov.au/dataset/gnaf/addressSite/710446419> ,
+        <https://linked.data.gov.au/dataset/gnaf/parcel/BELC-CHAR-15-16> ;
+    geo:sfWithin
+        <https://linked.data.gov.au/dataset/asgs2016/MB/80006300000> ,
+        <https://linked.data.gov.au/dataset/asgsed3/MB/80006300000> ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/locality/locba032712915d>
+    rdfs:label "Charnwood" ;
+.
+
+<https://linked.data.gov.au/dataset/gnaf/streetLocality/ACT3857>
+    rdfs:label "Packham" ;
+.
