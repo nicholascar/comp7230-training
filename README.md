@@ -11,7 +11,7 @@ See the Jupyter Notebook files:
 * [lecture_02.ipynb](lecture_02.ipynb)
 
 Click here to run the first lecture in your web browser:  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nicholascar/comp7230-training/HEAD?filepath=lecture_01.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nicholascar/comp7230-training/HEAD?filepath=lecture_01_2022.ipynb)
 
 ## Contact
 
