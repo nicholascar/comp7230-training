@@ -8,3 +8,4 @@ matplotlib
 sparql_dataframe
 pyglet
 mapboxgl
+git+https://github.com/RDFLib/timefuncs.git

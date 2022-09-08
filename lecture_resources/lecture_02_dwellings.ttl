@@ -1,5 +1,5 @@
 PREFIX ex: <http://example.com/>
-PREFIX mb: <https://linked.data.gov.au/dataset/asgs2016/meshblock/>
+PREFIX mb: <https://linked.data.gov.au/dataset/asgsed3/MB/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
