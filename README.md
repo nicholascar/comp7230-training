@@ -6,8 +6,7 @@ This is a series of lectures delivered by following through Jupyter Notebooks.
 
 See the Jupyter Notebook files:
 
-* [lecture_01_2022.ipynb](lecture_01_2022.ipynb)
-  * [lecture_01.ipynb](lecture_01.ipynb) - the lecture given in 2021 - is missing some previously-available data
+* [lecture_01.ipynb](lecture_01.ipynb)
 * [lecture_02.ipynb](lecture_02.ipynb)
 
 Click here to run the first lecture in your web browser:  
@@ -18,6 +17,6 @@ Click here to run the first lecture in your web browser:
 **Dr Nicholas Car**  
 _Adj. Snr. Lecturer_  
 College of Engineering & Computer Science  
-& SURROUND Australia Pty Ltd  
+& KurrawongAI
 _Located remotely, Brisbane_  
 <nicholas.car@anu.edu.au>
