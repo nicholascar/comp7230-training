@@ -38,10 +38,6 @@ ex:year-2021
 mb:50055290000
     a geo:Feature ;
     geo:sfTouches mb:50049040000 ;
-.
-
-mb:50055290000
-    a geo:Feature ;
     geo:hasGeometry [
         geo:asGML """
             <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG:6.9:3857">
@@ -63,6 +59,7 @@ mb:50055290000
 
 mb:50049040000
     a geo:Feature ;
+    geo:sfTouches mb:50055290000 ;
     geo:hasGeometry [
         geo:asGML """
             <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG:6.9:3857">
