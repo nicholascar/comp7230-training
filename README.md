@@ -16,7 +16,7 @@ Click here to run the first lecture in your web browser:
 
 **Dr Nicholas Car**  
 _Adj. Snr. Lecturer_  
-College of Engineering & Computer Science  
-& KurrawongAI
+[College of Engineering, Computing & Cybernetics](https://cecc.anu.edu.au)  
+& [KurrawongAI](https://kurrawong.ai)  
 _Located remotely, Brisbane_  
 <nicholas.car@anu.edu.au>
